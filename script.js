@@ -70,4 +70,18 @@ export function aufgabe03 (args) {
     return count// Zahl zurückgeben mit result.joint würde es resultat von Code (Text) zurückgeben
   }
 
+export function aufgabe05 (args) {
+  const input = args
+  const result = []
+  
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]}
 
+    if (currentElement === "capitalLetter") 
+let 
+
+
+
+
+  return result.join("")
+}
