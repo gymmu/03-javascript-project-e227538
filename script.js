@@ -43,7 +43,7 @@ export function aufgabe03 (args) {
     if (currentElement === "e") {  // wenn es e findet
      count = count + 1   
     }
-    
+
     else if (currentElement === "E") {
       count = count + 1
     }
@@ -51,6 +51,23 @@ export function aufgabe03 (args) {
     }
   return count//liest den Text angenehm (sonst alle Zeichen mit ; abgegrenzt)
 
+  }
+
+  export function aufgabe04 (args) {
+    const input = args
+    const result = []
+    let count = 1 // damit Wort Wort als 2 Wörter gezählt wird obwohl es nur 1 Leerschlag gibt.
+
+
+    for (let i = 0; i < input.length; i++) {
+      const currentElement = input[i]
+
+      if (currentElement === " ") {
+      count = count + 1}
+
+    }
+
+    return count// Zahl zurückgeben mit result.joint würde es resultat von Code (Text) zurückgeben
   }
 
 
