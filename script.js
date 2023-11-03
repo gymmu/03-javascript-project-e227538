@@ -41,16 +41,16 @@ export function aufgabe03 (args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     if (currentElement === "e") {  // wenn es e findet
+     count = count + 1   
+    }
+    
+    else if (currentElement === "E") {
       count = count + 1
     }
 
-    if (currentElement.toLowerCase() !== "e"){
-      result.push(currentElement)
     }
+  return count//liest den Text angenehm (sonst alle Zeichen mit ; abgegrenzt)
 
   }
-  return count
-}
-
 
 
