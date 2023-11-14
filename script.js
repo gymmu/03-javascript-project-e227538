@@ -56,7 +56,7 @@ export function aufgabe03 (args) {
   export function aufgabe04 (args) {
     const input = args
     const result = []
-    let count = 1 // damit Wort Wort als 2 Wörter gezählt wird obwohl es nur 1 Leerschlag gibt.
+    let count = 1 // damit Wort als 2 Wörter gezählt wird obwohl es nur 1 Leerschlag gibt.
 
 
     for (let i = 0; i < input.length; i++) {
@@ -77,8 +77,17 @@ export function aufgabe05 (args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]}
 
-    if (currentElement === "capitalLetter") 
-let 
+    if (currentElement === "capitalLetter") {
+    }
+
+    if (currentElement.capitalLetter() !== "capitalLetter"){
+      write: "true"
+    }
+
+    if (currentElement.lowerCase() !== "lowerCase") {
+      write: "false"
+    }
+
 
 
 
