@@ -94,3 +94,29 @@ export function aufgabe05 (args) {
 
   return result.join("")
 }
+
+
+export function aufgabe06 (args) {
+  const input = args
+  const result = []
+  let count = 0
+  
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+}
+
+if (currentElement === "special Character"){
+  count =  count + 1
+}
+
+
+if (count = count + 1) {
+  result push.false
+}  
+
+
+
+
+
+  return result.join("")
+}
