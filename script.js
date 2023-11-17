@@ -132,3 +132,37 @@ export function aufgabe09 (args) {
  return false
  
 }
+
+
+export function aufgabe11 (args) {
+  const input = args
+  const result = []
+
+  if (input.length > 1){//functionguard
+    return null
+  }
+  
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+     
+    return currentElement.charCodeAt(0)//gibt askii Wert an
+  }
+  
+  return null//wenn nicht durch funktion geht (über 1) wird null wiedergegeben
+}
+
+
+export function aufgabe12 (args) {
+  const input = args
+  const result = []
+ for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  if (currentElement === "e"){
+    return i //ist eine Zählvariable und braucht keine Anführungszeichen
+  }
+ }
+  
+  return -1
+}
+
+  
