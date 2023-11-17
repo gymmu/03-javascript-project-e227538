@@ -83,36 +83,23 @@ export function aufgabe05 (args) {
   }
 
 
-
-
-
-
-
   return false//wenn es die vorherige Funktion nicht durchläuft(das heisst keine Grossbuchstaben) dann faslch zurückgeben
 }
+
 
 
 export function aufgabe06 (args) {
   const input = args
   const result = []
-  let count = 0
   
 for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
 }
 
-if (currentElement === "special Character"){//den Text geb ich selber
-  count =  count + 1
+
+if (currentElement === "." ) {//wenn einzelnes Zeichen in Anführungszeichen steht, dann vergleicht er dieses einzelne Zeichen mit allen anderen
+  return true
 }
 
-
-if (count = count + 1) {
-  result.push(false)
+return false
 }  
-
-
-
-
-
-  return result.join("")
-}
