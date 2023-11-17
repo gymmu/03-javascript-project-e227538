@@ -62,7 +62,7 @@ export function aufgabe03 (args) {
     for (let i = 0; i < input.length; i++) {
       const currentElement = input[i]
 
-      if (currentElement === " ") {
+      if (currentElement === " ") {  //Wenn es in Anführungszeichen steht, ist es Name den ich selber gebe.
       count = count + 1}
 
     }
@@ -75,24 +75,20 @@ export function aufgabe05 (args) {
   const result = []
   
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]}
-
-    if (currentElement === "capitalLetter") {
+    const currentElement = input[i]
+    
+    if (currentElement === currentElement.toUpperCase()) {//wenn current Element=current Element in Grussbuchstaben
+      return true //true zurückgeben
     }
-
-    if (currentElement.capitalLetter() !== "capitalLetter"){
-      write: "true"
-    }
-
-    if (currentElement.lowerCase() !== "lowerCase") {
-      write: "false"
-    }
+  }
 
 
 
 
 
-  return result.join("")
+
+
+  return false//wenn es die vorherige Funktion nicht durchläuft(das heisst keine Grossbuchstaben) dann faslch zurückgeben
 }
 
 
@@ -105,13 +101,13 @@ for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
 }
 
-if (currentElement === "special Character"){
+if (currentElement === "special Character"){//den Text geb ich selber
   count =  count + 1
 }
 
 
 if (count = count + 1) {
-  result push.false
+  result.push(false)
 }  
 
 
