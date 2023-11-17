@@ -166,3 +166,16 @@ export function aufgabe12 (args) {
 }
 
   
+export function aufgabe13 (args) {
+  const input = args
+  const result = []
+  for (let i = (input.length-1); i >= 0; i--) {//von hinten zählen (lenght-1), i grösser oder gleich 0 (bedingung)wenn erfüllt schleife läuft weiter, und dann muss es minus zählen nicht mehr plus (i--), wichtigste zeile, man hat eignetlich Zeile umgekehrt
+    const currentElement = input[i]
+  if (currentElement === "e"){
+    return i
+  }
+  
+  }
+
+  return -1
+}
