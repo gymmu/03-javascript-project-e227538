@@ -100,3 +100,17 @@ if (currentElement === "." ) //wenn einzelnes Zeichen in Anführungszeichen steh
 
 return false
 }  
+
+
+
+export function aufgabe07 (args) {
+  const input = args
+  const result = []
+  
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+if (currentElement === "und" ) 
+  return true}
+
+  return false
+}
