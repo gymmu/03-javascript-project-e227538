@@ -92,14 +92,11 @@ export function aufgabe06 (args) {
   const input = args
   const result = []
   
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
-}
+for (let i = 0; i < input.length; i++) {//Eine Klammer um alles, damit überall (auch das if...) das input [i]=current Element
+  const currentElement = input[i]//um zu sagen dass Text [i] (immer diese Bezeichnung aber Current Element einfacher) gleich Current Element ist
+if (currentElement === "." ) //wenn einzelnes Zeichen in Anführungszeichen steht, dann vergleicht er dieses einzelne Zeichen mit allen anderen
+  return true}
 
-
-if (currentElement === "." ) {//wenn einzelnes Zeichen in Anführungszeichen steht, dann vergleicht er dieses einzelne Zeichen mit allen anderen
-  return true
-}
 
 return false
 }  
