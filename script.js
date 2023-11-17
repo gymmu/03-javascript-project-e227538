@@ -114,3 +114,21 @@ if (currentElement === "und" )
 
   return false
 }
+
+export function aufgabe09 (args) {
+  const input = args
+  const result = []//es ist bleicher, das heisst ich verwende es nicht
+
+  let len = 0
+
+  for (let i = 0; i < input.length; i++) { //Funktion sagt wenn man durch den Text geht bzw. liest, dann len plus 1
+    const currentElement = input[i]//würde es nicht mal brauchen
+    len++//gleich wie len = len + 1
+  }
+  
+  if (len === 6){
+  return true
+ }
+ return false
+ 
+}
