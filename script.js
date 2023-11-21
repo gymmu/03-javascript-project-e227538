@@ -1,6 +1,6 @@
 export function aufgabe01(args) {
   const input = args
-  const result = []
+  const result = []//leere Liste
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
@@ -10,13 +10,13 @@ export function aufgabe01(args) {
     }
 
     if (currentElement.toLowerCase() !== "e"){
-      result.push(currentElement)
+      result.push(currentElement)//wenn e nicht vorkommt wird current element angehängt
     }
 
     
    
   }
-  return result.join("")
+  return result.join("")//leere Liste wird angefügt
   }
 
 
@@ -178,4 +178,21 @@ export function aufgabe13 (args) {
   }
 
   return -1
+}
+
+export function aufgabe08 (args) {
+  const input = args
+  const result = []
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "e") {//wenn Element=e 
+      result.push(3)//dann 3 zurückgeben
+    }
+    else {
+      result.push(currentElement)//gelesene element das nicht e ist wird angefügt
+    }
+    
+  }
+  
+  return result.join("")
 }
