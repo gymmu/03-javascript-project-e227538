@@ -9,7 +9,7 @@ export function aufgabe01(args) {
       // falls es ein e ist nicht an Liste hängen
     }
 
-    if (currentElement.toLowerCase() !== "e"){
+    if (currentElement.toLowerCase() !== "e"){// !=nicht gleich richtig
       result.push(currentElement)//wenn e nicht vorkommt wird current element angehängt
     }
 
@@ -109,10 +109,16 @@ export function aufgabe07 (args) {
   
 for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
-if (currentElement === "und" ) 
-  return true}
+if (currentElement === "u" ) {
+  if(input [i+1]=== "n"){//gelesene Element
+    if(input [i+2]=== "d") {
+      return true
+    }
+  }
+}
 
-  return false
+}
+return false
 }
 
 export function aufgabe09 (args) {
