@@ -202,3 +202,27 @@ export function aufgabe08 (args) {
   
   return result.join("")
 }
+
+export function aufgabe10 (args) {
+  const input = args
+  const result = [] //brauchts nicht, weil ich keine Zeichen zurückgebe
+
+  if (input.length !== 7) return false//functionguard
+  if(input[0] !== "#") return false//functionguard
+  
+  
+for (let i = 1; i < input.length; i++) {//i= 1 weil das erste zeichen schon auf # überprüft wurde
+  const currentElement = input[i]//damit man nicht immer input[i] schreiben muss
+  const ascii = currentElement.charCodeAt(0)//was ist ascii= ascii gleich "Zahl", vorstellen wie Notitz ascii= zb.76
+
+  if (48 <= ascii && ascii <= 57){//wenn in diesem Spektrum ist dann Zifffer
+  }//leer weil dann lässt man es
+  else if (65 <= ascii && ascii<= 70){//wenn in diesem Spektrum ist dann A-F
+  }
+  else {
+    return false
+  }
+}
+
+  return true
+}
