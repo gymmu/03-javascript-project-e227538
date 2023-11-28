@@ -226,3 +226,21 @@ for (let i = 1; i < input.length; i++) {//i= 1 weil das erste zeichen schon auf 
 
   return true
 }
+
+export function aufgabe14 (args) {
+  const input = args
+  let pos = -1
+  let countE = 0
+  for (let i = 0; i < input.length; i++) {//i=Position, 
+    const currentElement = input[i]//Position von Element Namen vereinfachen
+    if (currentElement === "e"){
+    countE++//e zählen
+  if (countE === 3){//wenn man auf 3 gezählt hat
+    return i//Position von 3. e angeben
+  }
+}
+  }
+
+
+  return -1//wenn keine 3 e dann -1 so viel wie 1 vor dem Text=gibts nicht
+}
