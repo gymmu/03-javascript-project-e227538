@@ -244,3 +244,15 @@ export function aufgabe14 (args) {
 
   return -1//wenn keine 3 e dann -1 so viel wie 1 vor dem Text=gibts nicht
 }
+
+export function aufgabe15 (args) {
+  const input = args
+  const result = []
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  if (currentElement === " "){
+    
+  }
+}
+  return result.join("")
+}
