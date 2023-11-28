@@ -251,8 +251,16 @@ export function aufgabe15 (args) {
 for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
   if (currentElement === " "){
-    
+    return result.join("")
   }
+  result.push(currentElement)
 }
+  return result.join("")
+}
+
+export function aufgabe16 (args) {
+  const input = args
+  const result = []
+  
   return result.join("")
 }
