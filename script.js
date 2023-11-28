@@ -64,9 +64,11 @@ export function aufgabe03 (args) {
 
       if (currentElement === " ") {
       count = count + 1}
+      if (currentElement <32 && currentElement >47){
+        count = count + 0}
 
     }
-
+  
     return count// Zahl zurückgeben mit result.joint würde es resultat von Code (Text) zurückgeben
   }
 
