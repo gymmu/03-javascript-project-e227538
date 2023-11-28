@@ -250,8 +250,8 @@ export function aufgabe15 (args) {
   const result = []
 for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
-  if (currentElement === " "){
-    
+  if (currentElement === " "){ 
+    return i
   }
 }
   return result.join("")
