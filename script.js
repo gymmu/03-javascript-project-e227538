@@ -258,9 +258,24 @@ for (let i = 0; i < input.length; i++) {
   return result.join("")
 }
 
-export function aufgabe16 (args) {
-  const input = args
-  const result = []
+export function aufgabe16 (args) {//im Skipt
   
-  return result.join("")
+  const text = 'das ist im ersten Teil $ und das hier im zweiten'//das rote ist für mich als Hilfe
+let switchFirst = true//sagt aus wir sind bei ersten Liste am lesen setzt schalter (switch) auf die erste liste
+const listFirst = []
+const listSecond = []
+for (let i = 0; i < text.length; i++) {
+ 
+  if (text[i] === "$") {
+    switchFirst = false//hier wird wenn Zeichen $ gelesen wird, der Schalter umgeschaltet
+  }
+
+  if (switchFirst === true) {
+    listFirst.push(text[i])//wenn kein Dollar vorhanden ist, einfach 1. Liste anhängen
+  } else {
+    listSecond.push(text[i])//wenn switchFirst === false dann die 2. Liste anhängen
+  }
+}
+const result = [listFirst.join(""), listSecond.join("")]
+  return result.join("")//schreibt schön hin (sonst wäre es H,A,L,L,O)
 }
