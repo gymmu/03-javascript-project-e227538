@@ -320,6 +320,17 @@ for (let i = 0; i < text.length; i++) {
 const name = listFirst.join("")//geschweifte würden abschliessen
 const age = listSecond.join("")
 
-return "Sie heissen" + name + "und sind" + age + "Jahre alt"
+return "Sie heissen " + name + " und sind " + age + " Jahre alt"
+}
+
+export function aufgabe19 (args) {
+  const input = args
+  const result = []
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    result.push(currentElement)
+    result.push(currentElement)
+  }
+  return result.join("")
 }
 
