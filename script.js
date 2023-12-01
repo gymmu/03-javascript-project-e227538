@@ -298,3 +298,28 @@ for (let i = 0; i < text.length; i++) {
 phrases.push(currentPhrase.join(""))
 return phrases
 }
+
+export function aufgabe18 (args) {
+
+  const text = args
+let switchFirst = true
+const listFirst = []
+const listSecond = []
+for (let i = 0; i < text.length; i++) {
+ 
+  if (text[i] === " ") {
+    switchFirst = false
+  } else {
+   if (switchFirst === true) {
+    listFirst.push(text[i])
+  } else {
+    listSecond.push(text[i])
+  }
+}
+}
+const name = listFirst.join("")//geschweifte würden abschliessen
+const age = listSecond.join("")
+
+return "Sie heissen" + name + "und sind" + age + "Jahre alt"
+}
+
