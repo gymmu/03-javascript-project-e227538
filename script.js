@@ -258,9 +258,9 @@ for (let i = 0; i < input.length; i++) {
   return result.join("")
 }
 
-export function aufgabe16 (args) {//im Skipt
-  
-  const text = 'das ist im ersten Teil $ und das hier im zweiten'//das rote ist für mich als Hilfe
+export function aufgabe16 (args) {
+
+  const text = args
 let switchFirst = true//sagt aus wir sind bei ersten Liste am lesen setzt schalter (switch) auf die erste liste
 const listFirst = []
 const listSecond = []
@@ -278,4 +278,23 @@ for (let i = 0; i < text.length; i++) {
 }
 const result = [listFirst.join(""), listSecond.join("")]
   return result.join("")//schreibt schön hin (sonst wäre es H,A,L,L,O)
+}
+
+export function aufgabe17 (args) {
+
+const text = args
+const phrases = []
+let currentPhrase = []
+for (let i = 0; i < text.length; i++) {
+  const currentElement = text[i]
+  if (currentElement === ',') {
+    phrases.push(currentPhrase.join(""))//Wir speichern den aktuellen Satz als eine Element in phrases 
+    currentPhrase = []  // Damit löschen wir alles was im aktuellen Satz drin war.
+  } else {
+    // Wenn wir keinen ',' lesen, dann möchten wir die Zeichen an den aktuellen Satz anhängen.
+    currentPhrase.push(currentElement)
+  }
+}
+phrases.push(currentPhrase.join(""))
+return phrases
 }
