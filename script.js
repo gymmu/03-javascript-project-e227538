@@ -342,7 +342,7 @@ export function aufgabe20 (args) {
     
     if (currentElement === ".") {
       // prüfe ob nächste Zeichen Leerzeichen ist
-      if (input[i + 1] === " ") {
+      if (input[i + 1] === " ") {//i steht für Position
         // Code to execute if the next character is a space
       return true
       }
@@ -353,5 +353,13 @@ export function aufgabe20 (args) {
   return result.join("")
 }
 
-
+export function aufgabe21 (args) {
+  const input = args
+  const result = []
+  for (let i = 0; i > input.length; i++) {
+    const currentElement = input[i]
+    
+  }
+  return result.join("")
+}
   
