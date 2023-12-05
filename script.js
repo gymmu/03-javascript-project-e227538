@@ -303,22 +303,22 @@ export function aufgabe18 (args) {
 
   const text = args
 let switchFirst = true
-const listFirst = []
-const listSecond = []
+const listFirst = []// Liste wird erstellt
+const listSecond = []// 2. Liste für Alter 
 for (let i = 0; i < text.length; i++) {
  
-  if (text[i] === " ") {
-    switchFirst = false
+  if (text[i] === " ") {//wenn der bis jetzt gelesene Text " " enthaltet
+    switchFirst = false//Schalter auf falsch, damit nächste liste anfängt
   } else {
    if (switchFirst === true) {
-    listFirst.push(text[i])
+    listFirst.push(text[i])//am Schluss wenn beides in 2 verschiedene Listen gelesen wurden anhängen
   } else {
     listSecond.push(text[i])
   }
 }
 }
 const name = listFirst.join("")//geschweifte würden abschliessen
-const age = listSecond.join("")
+const age = listSecond.join("")//wandelt aneinandergerehite Zeichen zu lesbarem Text
 
 return "Sie heissen " + name + " und sind " + age + " Jahre alt"
 }
@@ -329,8 +329,29 @@ export function aufgabe19 (args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     result.push(currentElement)
-    result.push(currentElement)
+    result.push(currentElement)//es wird einfach 2 mal an Liste gehängt
   }
   return result.join("")
 }
 
+export function aufgabe20 (args) {
+  const input = args
+  const result = []
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    
+    if (currentElement === ".") {
+      // prüfe ob nächste Zeichen Leerzeichen ist
+      if (input[i + 1] === " ") {
+        // Code to execute if the next character is a space
+      return true
+      }
+      else {return false}
+    }
+}
+  
+  return result.join("")
+}
+
+
+  
