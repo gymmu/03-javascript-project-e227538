@@ -362,4 +362,35 @@ export function aufgabe21 (args) {
   }
   return result.join("")
 }
+
+
+
+
+
+export function aufgabe24 (args) {
+  const input = args
+  const result = []
+  
+if (input.length === 1) return input //functionguard, wenn nur 1 Element in der Liste ist, wird einfach das einte Element zurückgegeben
+
+  const firstElement = input [0]//erste und letzte Element auswählen 
+  const lastElement = input [input.length - 1]
+
+  result.push(lastElement)
+    for (let i = 1; i < input.length - 1; i++) {
+    const currentElement = input[i]
+    result.push(currentElement)//diese Schleife braucht man für die restlichen Elemente der Liste (um sie auch anzuhängen)
+  }
+  result.push(firstElement)
+
+  return result.join("")
+}
+
+
+export function aufgabe27 (args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
   
