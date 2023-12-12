@@ -390,7 +390,19 @@ if (input.length === 1) return input //functionguard, wenn nur 1 Element in der 
 export function aufgabe27 (args) {
   const input = args
   const result = []
+
+  if (input.length === 0) return false
   
-  return result.join("")
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const ascii = currentElement.charCodeAt(0)
+
+    if (48 <= ascii && ascii <= 57) {
+      result.push(currentElement)
+    } else {return false
+    }
+  }
+  return true
 }
+
   
