@@ -356,9 +356,9 @@ export function aufgabe20 (args) {
 export function aufgabe21 (args) {
   const input = args
   const result = []
-  for (let i = 0; i > input.length; i++) {
+  for (let i = 0; i > input.length -1; i++) {
     const currentElement = input[i]
-    
+    result.push(currentElement)
   }
   return result.join("")
 }
@@ -391,7 +391,7 @@ export function aufgabe27 (args) {
   const input = args
   const result = []
 
-  if (input.length === 0) return false
+  if (input.length === 0) return false//functionguard damit falls es keine Elemente gibt falsch angegeben wird
   
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
@@ -405,4 +405,20 @@ export function aufgabe27 (args) {
   return true
 }
 
-  
+export function bubblesort (args) {
+const args = "Bitte sortiere mich!"
+const list = text.split("") // Damit wandeln wir den Text in eine Liste um, das brauchen wir wenn wir Elemente vertauschen möchten.
+for (let i = 0; i < list.length - 1; i++) {
+  const currentElement = list[i]
+  const nextElement = list[i + 1]
+  if (currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) {
+    // Reihenfolge stimmt nicht, Elemente müssen getauscht werden.
+    const tmp = list[i + 1]
+    list[i + 1] = list[i]
+    list[i] = tmp
+    i = -1 // starte von vorne wenn etwas vertauscht wurde.
+  }
+}
+const result = list.join("")
+console.return(result)
+}
