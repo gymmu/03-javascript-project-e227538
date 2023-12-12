@@ -356,7 +356,10 @@ export function aufgabe20 (args) {
 export function aufgabe21 (args) {
   const input = args
   const result = []
-  for (let i = 0; i > input.length -1; i++) {
+
+return result.join("")//wird von hinten gelesen
+
+  for (let i = input.length -1; i >= 0 ; i--) {
     const currentElement = input[i]
     result.push(currentElement)
   }
@@ -408,17 +411,18 @@ export function aufgabe27 (args) {
 export function bubblesort (args) {
 const args = "Bitte sortiere mich!"
 const list = text.split("") // Damit wandeln wir den Text in eine Liste um, das brauchen wir wenn wir Elemente vertauschen möchten.
+
 for (let i = 0; i < list.length - 1; i++) {
-  const currentElement = list[i]
-  const nextElement = list[i + 1]
-  if (currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) {
+  const currentElement = list[i]//Element der Liste wird gelesen
+  const nextElement = list[i + 1]//das nächste element wird definiert
+  if (currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) {//hier wird geprüft, ob erste element grösser als nachfolgendes ist
     // Reihenfolge stimmt nicht, Elemente müssen getauscht werden.
     const tmp = list[i + 1]
-    list[i + 1] = list[i]
+    list[i + 1] = list[i]//plätze werden vertauscht
     list[i] = tmp
-    i = -1 // starte von vorne wenn etwas vertauscht wurde.
+    i = -1 // starte von vorne wenn etwas vertauscht wurde, immer -1 für vorne
   }
 }
-const result = list.join("")
-console.return(result)
+const result = list.join("")//angenehm geschrieben (in Text anstatt aneinandergerehite Zeichen)
+return(result)
 }
