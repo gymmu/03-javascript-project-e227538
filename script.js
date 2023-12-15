@@ -168,7 +168,7 @@ export function aufgabe12 (args) {
   }
  }
   
-  return -1
+  return -1//wenn Schleife nicht durchlaufen wird (kein e)computer weiss, dass -1 nicht existiert als position und übersetzt es als falsch
 }
 
   
@@ -207,8 +207,8 @@ export function aufgabe10 (args) {
   const input = args
   const result = [] //brauchts nicht, weil ich keine Zeichen zurückgebe
 
-  if (input.length !== 7) return false//functionguard
-  if(input[0] !== "#") return false//functionguard
+  if (input.length !== 7) return false//functionguard (eine Bedingung von Farben sind 7 Zeichen)
+  if(input[0] !== "#") return false//functionguard dh. wenn kein # vorhanden ist, dann kann man gleich abbrechen auch wenn nachher zahlen stehen
   
   
 for (let i = 1; i < input.length; i++) {//i= 1 weil das erste zeichen schon auf # überprüft wurde
