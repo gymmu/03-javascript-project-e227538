@@ -428,15 +428,7 @@ return(result)
 
 
 export function aufgabe22 (args) {
-  const input = args
-  const result = []
-  
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
-  currentElement = "_"
-  if (107 = ascii)
-  {result.push }
-}
+  const text = args
 
 
 
@@ -444,20 +436,18 @@ let switchFirst = true
 const listFirst = []// Liste wird erstellt
 const listSecond = []// 2. Liste für Alter 
   for (let i = 0; i < text.length; i++) {
-  let (currentElement) = "_"
+ 
   if (text[i] === "k") {//wenn der bis jetzt gelesene Text " " enthaltet
     switchFirst = false//Schalter auf falsch, damit nächste liste anfängt
   } else {
    if (switchFirst === true) {
-    listFirst.push(text[i])//am Schluss wenn beides in 2 verschiedene Listen gelesen wurden anhängen
+    listFirst.push("_")//am Schluss wenn beides in 2 verschiedene Listen gelesen wurden anhängen
   } else {
     listSecond.push(text[i])
   }
 }
 }
-listFirst.join("")//geschweifte würden abschliessen
-listSecond.join("")//wandelt aneinandergerehite Zeichen zu lesbarem Text
+return listFirst.join("") + listSecond.join("")//geschweifte würden abschliessen
+//wandelt aneinandergerehite Zeichen zu lesbarem Text
 
-
-  return result.join("")
 }
