@@ -425,3 +425,39 @@ for (let i = 0; i < list.length - 1; i++) {
 const result = list.join("")//angenehm geschrieben (in Text anstatt aneinandergerehite Zeichen)
 return(result)
 }
+
+
+export function aufgabe22 (args) {
+  const input = args
+  const result = []
+  
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  currentElement = "_"
+  if (107 = ascii)
+  {result.push }
+}
+
+
+
+let switchFirst = true
+const listFirst = []// Liste wird erstellt
+const listSecond = []// 2. Liste für Alter 
+  for (let i = 0; i < text.length; i++) {
+  let (currentElement) = "_"
+  if (text[i] === "k") {//wenn der bis jetzt gelesene Text " " enthaltet
+    switchFirst = false//Schalter auf falsch, damit nächste liste anfängt
+  } else {
+   if (switchFirst === true) {
+    listFirst.push(text[i])//am Schluss wenn beides in 2 verschiedene Listen gelesen wurden anhängen
+  } else {
+    listSecond.push(text[i])
+  }
+}
+}
+listFirst.join("")//geschweifte würden abschliessen
+listSecond.join("")//wandelt aneinandergerehite Zeichen zu lesbarem Text
+
+
+  return result.join("")
+}
