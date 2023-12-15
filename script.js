@@ -27,7 +27,7 @@ export function aufgabe02 (args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i] 
-  result.push (currentElement.toUpperCase())
+  result.push (currentElement.toUpperCase())//kleinbuchstaben werden gross geschrieben
   }
   return result.join("")
 }
@@ -109,7 +109,7 @@ export function aufgabe07 (args) {
   
 for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
-if (currentElement === "u" ) {
+if (currentElement === "u" ) {//mit 3 Gleichheitszeichen prüfen wir ob es "irgendetwas" ist. Mit einem Gleichheitszeichen würde man jedes Element mit "irgendetwas" ersetzten
   if(input [i+1]=== "n"){//gelesene Element
     if(input [i+2]=== "d") {
       return true
@@ -125,7 +125,7 @@ export function aufgabe09 (args) {
   const input = args
   const result = []//es ist bleicher, das heisst ich verwende es nicht
 
-  let len = 0
+  let len = 0//len ist Abkürzung für length
 
   for (let i = 0; i < input.length; i++) { //Funktion sagt wenn man durch den Text geht bzw. liest, dann len plus 1
     const currentElement = input[i]//würde es nicht mal brauchen
@@ -168,7 +168,7 @@ export function aufgabe12 (args) {
   }
  }
   
-  return -1
+  return -1//wenn Schleife nicht durchlaufen wird (kein e)computer weiss, dass -1 nicht existiert als position und übersetzt es als falsch
 }
 
   
@@ -207,8 +207,8 @@ export function aufgabe10 (args) {
   const input = args
   const result = [] //brauchts nicht, weil ich keine Zeichen zurückgebe
 
-  if (input.length !== 7) return false//functionguard
-  if(input[0] !== "#") return false//functionguard
+  if (input.length !== 7) return false//functionguard (eine Bedingung von Farben sind 7 Zeichen)
+  if(input[0] !== "#") return false//functionguard dh. wenn kein # vorhanden ist, dann kann man gleich abbrechen auch wenn nachher zahlen stehen
   
   
 for (let i = 1; i < input.length; i++) {//i= 1 weil das erste zeichen schon auf # überprüft wurde
@@ -424,4 +424,28 @@ for (let i = 0; i < list.length - 1; i++) {
 }
 const result = list.join("")//angenehm geschrieben (in Text anstatt aneinandergerehite Zeichen)
 return(result)
+}
+
+
+export function aufgabe22 (args) {
+  const text = args
+
+let switchFirst = true
+const listFirst = []// Liste wird erstellt
+const listSecond = []// 2. Liste erstellt
+  for (let i = 0; i < text.length; i++) {
+ 
+  if (text[i] === "k") {//wenn der bis jetzt gelesene Text "k" enthaltet
+    switchFirst = false//Schalter auf falsch, damit nächste Liste anfängt
+  } else {
+   if (switchFirst === true) {
+    listFirst.push("_")//wenn nicht auf falsch geswitched wird, wird jedes Element mit "_" ersetzt
+  } else {
+    listSecond.push(text[i])
+  }
+}
+}
+return listFirst.join("") + listSecond.join("")//geschweifte würden abschliessen
+//wandelt aneinandergerehite Zeichen zu lesbarem Text, mit + verbunden um Text aneindergereiht anzuhängen
+
 }
